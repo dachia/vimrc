@@ -9,9 +9,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Quramy/tsuquyomi'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -23,5 +22,12 @@ syntax on
 set clipboard=unnamed
 set tabstop=2
 set shiftwidth=2
+set ttyfast
+set lazyredraw
+set number
+set expandtab
+set cursorline
+set showmatch
+let python_highlight_all=1
 
 map <C-n> :NERDTreeToggle<CR>
