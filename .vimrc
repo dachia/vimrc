@@ -29,5 +29,6 @@ set expandtab
 set cursorline
 set showmatch
 let python_highlight_all=1
+let g:ctrlp_custom_ignore='node_modules\|venv\|.git'
 
 map <C-n> :NERDTreeToggle<CR>
