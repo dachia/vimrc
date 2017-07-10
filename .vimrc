@@ -28,6 +28,7 @@ set number
 set expandtab
 set cursorline
 set showmatch
+set wildignore=**/venv/**,**/externals/**
 let python_highlight_all=1
 let g:ctrlp_custom_ignore='node_modules\|venv\|.git\|.pyc'
 nnoremap <C-Left> :tabprevious<CR>
