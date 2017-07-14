@@ -10,8 +10,12 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -27,11 +31,11 @@ set ttyfast
 set lazyredraw
 set number
 set expandtab
-set cursorline
 set showmatch
 set wildignore=**/venv/**,**/externals/**
 let python_highlight_all=1
 let g:ctrlp_custom_ignore='node_modules\|venv\|.git\|.pyc'
+let g:syntatastic_check_on_open=1
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
