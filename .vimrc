@@ -14,12 +14,14 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'Valloric/YouCompleteMe'
 
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+colorscheme bclear
 set nu
 set splitright
 set encoding=utf-8
