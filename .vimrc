@@ -21,24 +21,26 @@ Plugin 'Valloric/YouCompleteMe'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+syntax on
 colorscheme bclear
 set nu
 set splitright
 set encoding=utf-8
-syntax on
+set ts=2 sw=2 et
 set clipboard=unnamed
-set tabstop=2
-set shiftwidth=2
 set ttyfast
 set lazyredraw
 set number
-set expandtab
 set showmatch
+set cursorline
 set wildignore=**/venv/**,**/externals/**,**/node_modules/**
+
 let python_highlight_all=1
 let g:ctrlp_custom_ignore='node_modules\|venv\|.git\|.pyc'
 let g:syntatastic_check_on_open=1
 let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=2
+
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
