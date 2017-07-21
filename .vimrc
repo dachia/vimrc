@@ -32,10 +32,11 @@ set lazyredraw
 set number
 set expandtab
 set showmatch
-set wildignore=**/venv/**,**/externals/**
+set wildignore=**/venv/**,**/externals/**,**/node_modules/**
 let python_highlight_all=1
 let g:ctrlp_custom_ignore='node_modules\|venv\|.git\|.pyc'
 let g:syntatastic_check_on_open=1
+let g:indent_guides_enable_on_vim_startup=1
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
