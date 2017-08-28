@@ -16,6 +16,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'ntpeters/vim-better-whitespace'
 
 
 call vundle#end()            " required
