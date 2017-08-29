@@ -35,10 +35,17 @@ set number
 set showmatch
 set cursorline
 set wildignore=**/venv/**,**/externals/**,**/node_modules/**
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 let python_highlight_all=1
 let g:ctrlp_custom_ignore='node_modules\|venv\|.git\|.pyc'
-let g:syntatastic_check_on_open=1
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
 
