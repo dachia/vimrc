@@ -1,4 +1,5 @@
 set nocompatible              " required
+set term=ansi
 filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
