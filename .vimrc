@@ -1,5 +1,4 @@
 set nocompatible              " required
-set term=ansi
 filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -30,8 +29,6 @@ set splitright
 set encoding=utf-8
 set ts=2 sw=2 et
 set clipboard=unnamed
-set ttyfast
-set lazyredraw
 set number
 set showmatch
 set cursorline
@@ -54,3 +51,11 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
 map <C-n> :NERDTreeToggle<CR>
+
+if &term =~ '^screen'
+  " tmux will send xterm-style keys when its xterm-keys option is on
+  execute "set <xUp>=\e[1;*A"
+  execute "set <xDown>=\e[1;*B"
+  execute "set <xRight>=\e[1;*C"
+  execute "set <xLeft>=\e[1;*D"
+endif
