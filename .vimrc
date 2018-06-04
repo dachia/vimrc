@@ -5,19 +5,18 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/syntastic'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'pangloss/vim-javascript'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ntpeters/vim-better-whitespace'
 
+Plugin 'tomlion/vim-solidity'
+Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -25,6 +24,7 @@ filetype plugin indent on    " required
 syntax on
 colorscheme bclear
 set nu
+set autowrite
 set splitright
 set encoding=utf-8
 set ts=2 sw=2 et
@@ -46,6 +46,11 @@ let python_highlight_all=1
 let g:ctrlp_custom_ignore='node_modules\|venv\|.git\|.pyc'
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
+
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_solidity_checkers = ['solc']
+let g:syntastic_typescript_checkers = ['tslint']
+let g:syntastic_python_checkers = ['pylint', 'python']
 
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
