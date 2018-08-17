@@ -18,6 +18,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'raimondi/delimitmate'
+Plugin 'tpope/vim-jdaddy'
 
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'pangloss/vim-javascript'
@@ -37,6 +38,8 @@ let g:airline#extensions#tabline#formatter='default'
 let g:airline#extensions#tabline#enabled=1
 
 let g:airline#extensions#ale#enabled=1
+
+let g:ale_echo_cursor = 0
 
 set autowrite
 set nu
