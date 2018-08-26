@@ -39,8 +39,6 @@ let g:airline#extensions#tabline#enabled=1
 
 let g:airline#extensions#ale#enabled=1
 
-let g:ale_echo_cursor = 0
-
 set autowrite
 set nu
 set splitright
@@ -51,6 +49,7 @@ set number
 set showmatch
 set cursorline
 set wildignore=**/venv/**,**/externals/**,**/node_modules/**
+set backspace=2
 
 let python_highlight_all=1
 let g:ycm_python_binary_path = './venv/bin/python'
