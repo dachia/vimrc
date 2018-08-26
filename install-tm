@@ -1,0 +1,4 @@
+#!/bin/bash
+ln -s $PWD/tm/tm-d /usr/bin/tm-d
+ln -s $PWD/tm/tm-3 /usr/bin/tm-3
+ln -s $PWD/tm/tm-rv /usr/bin/tm-rv

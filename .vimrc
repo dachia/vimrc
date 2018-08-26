@@ -51,6 +51,8 @@ set cursorline
 set wildignore=**/venv/**,**/externals/**,**/node_modules/**
 set backspace=2
 
+set timeoutlen=1000 ttimeoutlen=0
+
 let python_highlight_all=1
 let g:ycm_python_binary_path = './venv/bin/python'
 

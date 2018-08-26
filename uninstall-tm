@@ -1,0 +1,4 @@
+#!/bin/bash
+rm -rf /usr/bin/tm-d
+rm -rf /usr/bin/tm-3
+rm -rf /usr/bin/tm-rv
