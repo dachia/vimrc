@@ -6,9 +6,5 @@ tmux rename-window -t $SESSION:1 "vim main"
 tm-3
 tm-rv
 
-tmux new-window -t $SESSION -a -n ops
-tmux split-window -v
-tm-rv
-
 tmux select-window -t $SESSION:1
 tmux -2 attach -t $SESSION
