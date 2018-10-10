@@ -6,11 +6,12 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
-Plugin 'vim-airline/vim-airline'
 
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 
@@ -20,7 +21,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'raimondi/delimitmate'
 Plugin 'tpope/vim-jdaddy'
 
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'plytophogy/vim-virtualenv'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tomlion/vim-solidity'
 Plugin 'leafgarland/typescript-vim'
@@ -30,15 +31,8 @@ filetype plugin indent on    " required
 
 syntax enable
 colorscheme solarized
+
 set background=light
-
-let g:airline_theme='solarized'
-
-let g:airline#extensions#tabline#formatter='default'
-let g:airline#extensions#tabline#enabled=1
-
-let g:airline#extensions#ale#enabled=1
-
 set autowrite
 set nu
 set splitright
@@ -50,15 +44,19 @@ set showmatch
 set cursorline
 set wildignore=**/venv/**,**/externals/**,**/node_modules/**
 set backspace=2
-
 set timeoutlen=1000 ttimeoutlen=0
 
-let python_highlight_all=1
-let g:ycm_python_binary_path = './venv/bin/python'
+let g:airline_theme='solarized'
+let g:airline#extensions#tabline#formatter='default'
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#ale#enabled=1
 
 let g:ctrlp_custom_ignore='node_modules\|venv\|.git\|.pyc'
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
+
+let g:ale_python_pylint_options='--load-plugins pylint_django'
+let g:ale_python_auto_pipenv=1
 
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
