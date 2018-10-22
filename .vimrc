@@ -25,6 +25,8 @@ Plugin 'plytophogy/vim-virtualenv'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tomlion/vim-solidity'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -54,6 +56,8 @@ let g:airline#extensions#ale#enabled=1
 let g:ctrlp_custom_ignore='node_modules\|venv\|.git\|.pyc'
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
+
+let g:ycm_autoclose_preview_window_after_completion=1
 
 let g:ale_python_pylint_options='--load-plugins pylint_django'
 let g:ale_python_auto_pipenv=1
