@@ -47,6 +47,9 @@ set cursorline
 set wildignore=**/venv/**,**/externals/**,**/node_modules/**
 set backspace=2
 set timeoutlen=1000 ttimeoutlen=0
+set nofoldenable
+
+let g:vim_markdown_folding_disabled = 1
 
 let g:airline_theme='solarized'
 let g:airline#extensions#tabline#formatter='default'
