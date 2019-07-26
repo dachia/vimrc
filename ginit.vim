@@ -51,7 +51,6 @@ set backspace=2
 set nolz
 
 let g:loaded_python_provider=0
-let g:python3_host_prog='C:/Python37/python.exe'
 let g:vim_markdown_folding_disabled = 1
 
 let g:airline_theme='solarized'

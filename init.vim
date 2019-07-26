@@ -1,8 +1,8 @@
 set nocompatible              " required
 filetype off                  " required
 
-set rtp+=$localappdata/nvim/bundle/Vundle.vim
-call vundle#begin('$localappdata/nvim/bundle/')
+set rtp+=~/.config/nvim/bundle/Vundle.vim
+call vundle#begin('~/.config/nvim/bundle/')
 
 Plugin 'VundleVim/Vundle.vim'
 
@@ -51,7 +51,7 @@ set backspace=2
 set nolz
 
 let g:loaded_python_provider=0
-let g:python3_host_prog='C:/Python37/python.exe'
+let g:python3_host_prog='/usr/local/bin/python3'
 let g:vim_markdown_folding_disabled = 1
 
 let g:airline_theme='solarized'
